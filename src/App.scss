@@ -1,0 +1,256 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+ }
+
+ ::-webkit-scrollbar-track {
+   
+   border: hidden;
+ }
+
+ ::-webkit-scrollbar-thumb {
+   background: #292b35; 
+   border-radius: 8px;
+ }
+
+
+// ### loginbox ###
+
+ .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+   &__box {
+      width: 505px;
+      height: 650px;
+      display: flex;
+      flex-direction: column;
+      background-color: #1e1f25;
+      border-radius: 16px;
+      margin: 24px;
+   }
+
+   &__Detail {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 60px;
+      position: relative;
+
+
+      & > label {
+         color: #9494b8;
+         padding-top: 30px;
+         font-size: 20px;
+         font-weight: 500;
+      }
+
+
+      & > h1 {
+         color: whitesmoke;
+         font-size: 56px;
+         padding-bottom: 16px;
+      }
+
+      & > button {
+         margin-top: 160px;
+         font-size: 24px;
+         width: 385px;
+         height: 62px;
+         background-color: #29292f;
+         color: white;
+         border-radius: 30px;
+         border: none;
+         cursor: pointer;
+      }
+
+    
+
+      &_invalid {
+         padding-top: 16px;
+         color: red;
+         font-weight: 500;
+         bottom: 200px;
+         position: absolute;
+      }
+
+      
+      
+   }
+ }
+
+ .invalid_Input {
+   width: 377px;
+   font-size: 16px;
+   padding-top: 30px;
+   background: none;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid red;
+   color: whitesmoke;
+ }
+
+ .valid_Input {
+   width: 377px;
+   font-size: 16px;
+   padding-top: 30px;
+   background: none;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #29292f;
+   color: whitesmoke;
+ }
+
+
+
+
+ // #### todolist Page ####
+
+ .todo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100vw;
+  
+
+   &__box {
+      width: 505px;
+      height: 650px;
+      display: flex;
+      flex-direction: column;
+      background-color: #1e1f25;
+      border-radius: 16px;
+     
+      padding: 60px;
+      padding-bottom: 24px;
+   }
+
+   &__add {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      // padding: 60px;
+      position: relative;
+      margin-bottom: 16px;
+
+      & > h1 {
+
+            color: whitesmoke;
+            font-size: 56px;
+            padding-bottom: 16px;
+      }
+
+      & > h4 {
+         color: #9494b8;
+         font-weight: 500;
+      }
+      
+      & > input {
+         width: 377px;
+         font-size: 16px;
+         padding-top: 30px;
+         background: none;
+         border: none;
+         outline: none;
+         border-bottom: 1px solid #29292f;
+         color: whitesmoke;
+         
+      }
+   }
+
+
+   &__list {
+      min-height: 300px;
+      max-width: 380px;
+      gap: 8px;
+      overflow: scroll;
+      overflow-x: hidden;
+     
+      
+    
+      & > ul {
+         list-style: none;
+         display: flex;
+         align-items: center;
+      }
+
+      &_item {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 4px;
+         padding-right: 16px;
+         
+
+         &_title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 16px;
+            color: #dadada;
+            margin-top: 4px;
+
+            & > input {
+               background-color: #292b35;
+               border: 2px solid #0e0e11;
+            }
+            
+           
+         }
+
+
+         & > button {
+            border: none;
+            color: #dadada;
+            font-weight: 700;
+            background-color: #1e1f25;
+            font-size: 16px;
+            cursor: pointer;
+         }  
+      }
+      
+      &_logoutBtn {
+         margin-top: 20px;
+         font-size: 16px;
+         width: 385px;
+         height: 62px;
+         background-color: #29292f;
+         color: white;
+         border-radius: 30px;
+         border: none;
+         cursor: pointer;
+      }
+   }
+ }
+
+ .checked_input {
+   text-decoration: line-through 2px red;
+   
+ }
+
+
+.notfoundpage {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+
+   
+}
+.notfound > h1 {
+   color: white;
+}
+
