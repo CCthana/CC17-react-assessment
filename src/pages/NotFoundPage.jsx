@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function NotFoundPage() {
   return (
   <div className="notfoundpage">
-   <div className="notfound">
+   <div className="https://github.com/CCthana/CC17-react-assessment.git ">
      <h1 >NotFound</h1>
      
          <Link to='/'>Home</Link>
